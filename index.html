@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Data Visualisation</title>
+    <meta charset="utf-8" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Data Visualisation
+## Top 5 Tips
+
+---
+
+
+
+
+&lt;style type="text/css"&gt;
+
+.inverse {
+  background-color: #132734;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+}
+
+.title-slide {
+  background-color: #132734;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+  class: inverse, center, middle;
+  background-image: url('img/logo.png');  
+  background-position: 5% 98%;  
+  background-size: 150px ;
+}
+
+&lt;/style&gt;
+
+# Top 5 Tips  
+
+### 1. Clearly define your goals beforehand   
+### 2. Keep it simple  
+### 3. Think about data-to-ink ratio  
+### 4. Colours matter   
+### 5. Use clear labels, titles and units 
+
+---
+
+
+
+# Top 5 Tips  
+
+### 1. Clearly define your goals beforehand  
+  - Are you comparing across groups or over time?  
+  - How many variables are involved and what type are they?
+  - Are you showing a relationship?  
+  - Aim to build your chart to answer just the question you set yourself  
+
+---
+
+# Top 5 Tips  
+
+### 2. Keep it simple  
+  - Just one y-axis    
+  - Consider using facets or multiple charts over crowded, grouped charts   
+  - Stick to 2D and avoid pie charts  
+
+---
+
+# Top 5 Tips  
+
+### 3. Think about data-to-ink ratio
+  - Are you wasting ink on backgrounds, boxes, lines, ticks, labels?  
+  - Is the ink you are using conveying useful information?
+
+---
+# Top 5 Tips   
+
+### 4. Colours matter  
+ - Use colour as a dimension, not as a decoration  
+ - Be mindful of colour-blindness and correct perception  
+
+---
+# Top 5 Tips    
+
+### 5. Use clear labels, titles and units    
+  - People aren't mind readers  
+  - Be unambiguous and honest  
+
+---
+# A Bad Example    
+
+Here is what not to do..
+
+![](index_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+
+---
+# 1. Clearly define your goals beforehand   
+
+&gt; We want to explore the size of Star Wars characters by assessing the 
+relationship of body height and weight.  
+
+---
+# 2. Keep it simple 
+
+A basic, 2D scatter plot to show the main relationship between our two continuous 
+variables.  
+
+![](index_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
+
+---
+# 3. Think about data-to-ink ratio
+
+There is lots of empty space due to an outlier. 
+
+![](index_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+
+---
+# 3. Think about data-to-ink ratio
+
+There is lots of empty space due to an outlier. 
+
+![](img/jabba.jpeg)
+
+---
+# 3. Think about data-to-ink ratio
+
+By removing Jabba The Hutt and we get a better use of the data space.
+
+![](index_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+
+---
+# 4. Colours matter  
+
+Let's make use of colour by adding a different colour for each species.  
+
+![](index_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+
+Way too many species are present in the data. We can see the characters are 
+mainly Human, Droid and a long tail of others. 
+
+---
+# 4. Colours matter 
+
+We can lump some of these together. 
+
+![](index_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+---
+# 4. Colours matter 
+
+Be careful choosing a colour scale. We need to consider accessibility 
+and also perception.  
+
+Here are some palettes that are colour blind friendly and fall into a few groups:  
+
++ Sequential  
++ Qualitative  
++ Diverging  
+
+---
+# Sequential  
+
+![](index_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+
+---
+# Qualitative  
+![](index_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+
+---
+# Diverging  
+![](index_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+
+
+---
+# 4. Colours matter 
+
+The viridis scales provide colour maps that are perceptually uniform in both colour and black-and-white. They are also designed to be perceived by viewers with common forms of colour blindness. See also https://bids.github.io/colormap/.
+
+![](index_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+
+---
+# 5. Use clear labels, titles and units 
+
+We don't want the chart to be a data table, let's add labels using just the
+top and bottom character from each category.  
+
+![](index_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
+
+---
+# 5. Use clear labels, titles and units 
+
+Lets fix the axes labels, add units, proper titles and a nice minimal theme.
+
+![](index_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+
+---
+#  The finished product  
+
+
+![](index_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+
+---
+Much better than the ugly bar chart  
+
+![](index_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+
+---
+
+# Top 5 Tips  
+
+### 1. Clearly define your goals beforehand   
+### 2. Keep it simple  
+### 3. Think about data-to-ink ratio  
+### 4. Colours matter   
+### 5. Use clear labels, titles and units 
+
+---
+class: inverse, center, middle
+background-image: url('img/logo.png')  
+background-position: 5% 98%  
+background-size: 150px  
+
+# Thanks!
+
+https://www.internetrix.com.au/services/data-science/
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
