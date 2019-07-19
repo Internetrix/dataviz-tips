@@ -42,9 +42,16 @@ data("starwars")
   background-size: 150px ;
 }
 
+body { font-family: 'Open Sans' }
+
+h1, h2, h3 {
+  font-family: 'Ubuntu';
+  font-weight: normal;
+}
+
 ```
 
-# Top 5 Tips  
+## Top 5 Tips  
 
 ### 1. Clearly define your goals beforehand   
 ### 2. Keep it simple  
@@ -56,7 +63,7 @@ data("starwars")
 
 
 
-# Top 5 Tips  
+## Top 5 Tips  
 
 ### 1. Clearly define your goals beforehand  
   - Are you comparing across groups or over time?  
@@ -66,7 +73,7 @@ data("starwars")
 
 ---
 
-# Top 5 Tips  
+## Top 5 Tips  
 
 ### 2. Keep it simple  
   - Just one y-axis    
@@ -82,21 +89,21 @@ data("starwars")
   - Is the ink you are using conveying useful information?
 
 ---
-# Top 5 Tips   
+## Top 5 Tips   
 
 ### 4. Colours matter  
  - Use colour as a dimension, not as a decoration  
  - Be mindful of colour-blindness and correct perception  
 
 ---
-# Top 5 Tips    
+## Top 5 Tips    
 
 ### 5. Use clear labels, titles and units    
   - People aren't mind readers  
   - Be unambiguous and honest  
 
 ---
-# A Bad Example    
+## A Bad Example    
 
 Here is what not to do..
 
@@ -116,13 +123,13 @@ starwars %>%
 ```
 
 ---
-# 1. Clearly define your goals beforehand   
+## 1. Clearly define your goals beforehand   
 
 > We want to explore the size of Star Wars characters by assessing the 
 relationship of body height and weight.  
 
 ---
-# 2. Keep it simple 
+## 2. Keep it simple 
 
 A basic, 2D scatter plot to show the main relationship between our two continuous 
 variables.  
@@ -134,7 +141,7 @@ starwars %>%
 ```
 
 ---
-# 3. Think about data-to-ink ratio
+## 3. Think about data-to-ink ratio
 
 There is lots of empty space due to an outlier. 
 
@@ -146,14 +153,14 @@ starwars %>%
 ```
 
 ---
-# 3. Think about data-to-ink ratio
+## 3. Think about data-to-ink ratio
 
 There is lots of empty space due to an outlier. 
 
 ![](img/jabba.jpeg)
 
 ---
-# 3. Think about data-to-ink ratio
+## 3. Think about data-to-ink ratio
 
 By removing Jabba The Hutt and we get a better use of the data space.
 
@@ -165,7 +172,7 @@ starwars %>%
 ```
 
 ---
-# 4. Colours matter  
+## 4. Colours matter  
 
 Let's make use of colour by adding a different colour for each species.  
 
@@ -180,7 +187,7 @@ Way too many species are present in the data. We can see the characters are
 mainly Human, Droid and a long tail of others. 
 
 ---
-# 4. Colours matter 
+## 4. Colours matter 
 
 We can lump some of these together. 
 
@@ -194,7 +201,7 @@ starwars %>%
 ```
 
 ---
-# 4. Colours matter 
+## 4. Colours matter 
 
 Be careful choosing a colour scale. We need to consider accessibility 
 and also perception.  
@@ -206,27 +213,27 @@ Here are some palettes that are colour blind friendly and fall into a few groups
 + Diverging  
 
 ---
-# Sequential  
+## Sequential  
 
 ```{r fig.height=6, fig.width=6, dpi = 100}
 display.brewer.all(colorblindFriendly = TRUE, type = "seq")
 ```
 
 ---
-# Qualitative  
+## Qualitative  
 ```{r fig.height=6, fig.width=6, dpi = 100}
 display.brewer.all(colorblindFriendly = TRUE, type = "qual")
 ```
 
 ---
-# Diverging  
+## Diverging  
 ```{r fig.height=6, fig.width=6, dpi = 100}
 display.brewer.all(colorblindFriendly = TRUE, type = "div")
 ```
 
 
 ---
-# 4. Colours matter 
+## 4. Colours matter 
 
 The viridis scales provide colour maps that are perceptually uniform in both colour and black-and-white. They are also designed to be perceived by viewers with common forms of colour blindness. See also https://bids.github.io/colormap/.
 
@@ -241,7 +248,7 @@ starwars %>%
 ```
 
 ---
-# 5. Use clear labels, titles and units 
+## 5. Use clear labels, titles and units 
 
 We don't want the chart to be a data table, let's add labels using just the
 top and bottom character from each category.  
@@ -263,7 +270,7 @@ starwars %>%
 ```
 
 ---
-# 5. Use clear labels, titles and units 
+## 5. Use clear labels, titles and units 
 
 Lets fix the axes labels, add units, proper titles and a nice minimal theme.
 
@@ -292,7 +299,7 @@ starwars %>%
 ```
 
 ---
-#  The finished product  
+##  The finished product  
 
 
 ```{r fig.height=6, fig.width=11, dpi = 400}
@@ -339,7 +346,7 @@ starwars %>%
 
 ---
 
-# Top 5 Tips  
+## Top 5 Tips  
 
 ### 1. Clearly define your goals beforehand   
 ### 2. Keep it simple  
